@@ -6,5 +6,6 @@
 	<color name="whiteish">#FAFAFA</color>
 	<color name="white">#FFF</color>
 	<color name="lightGray">#878787</color>
+	<color name="gray">#BBB</color>
 	<color name="black">#000</color>
 </resources>

@@ -2,20 +2,21 @@ package com.example.instagramclone
 
 import android.content.Intent
 import android.util.Log
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.bottom_navigation_view.*
 
 @Suppress("UNSAFE_CALL_ON_PARTIALLY_DEFINED_RESOURCE")
 abstract class BaseActivity(val navNumber: Int) : AppCompatActivity() {
 	private val TAG = "BaseActivity"
 
 	fun initBottomNavMenu() {
-		bottom_navigation_view.setIconSize(29f, 29f)
-		bottom_navigation_view.setTextVisibility(false)
-		bottom_navigation_view.enableItemShiftingMode(false)
-		bottom_navigation_view.enableShiftingMode(false)
-		bottom_navigation_view.enableAnimation(false)
+		with(bottom_navigation_view) {
+			setIconSize(29f, 29f)
+			setTextVisibility(false)
+			enableItemShiftingMode(false)
+			enableShiftingMode(false)
+			enableAnimation(false)
+		}
 		for (i in 0 until bottom_navigation_view.menu.size()) {
 			bottom_navigation_view.setIconTintList(i, null)
 		}
@@ -37,7 +38,7 @@ abstract class BaseActivity(val navNumber: Int) : AppCompatActivity() {
 				val intent = Intent(this, nextActivity)
 				intent.flags = Intent.FLAG_ACTIVITY_NO_ANIMATION
 				startActivity(intent)
-				overridePendingTransition(0,0)
+				overridePendingTransition(0, 0)
 				true
 			} else {
 				false

@@ -1,3 +1,5 @@
-<resources>
-    <string name="app_name">InstagramClone</string>
-</resources>
+<resources >
+	<string name="app_name" >InstagramClone</string >
+	<string name="profile_edit_btn" >Edit profile</string >
+	<string name="edit_profile_header" >Edit profile</string >
+</resources >
