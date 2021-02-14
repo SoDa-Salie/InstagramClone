@@ -2,4 +2,5 @@
 	<string name="app_name" >InstagramClone</string >
 	<string name="profile_edit_btn" >Edit profile</string >
 	<string name="edit_profile_header" >Edit profile</string >
+	<string name="create_account" >Don\'t have an account? <b>Sign up.</b></string >
 </resources >
