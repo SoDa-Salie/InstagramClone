@@ -41,4 +41,5 @@ apply plugin: 'com.android.application'
       implementation 'com.android.support:appcompat-v7:28'
       implementation 'de.hdodenhof:circleimageview:3.1.0'
       implementation platform('com.google.firebase:firebase-bom:26.4.0')
+      implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3'
   }
